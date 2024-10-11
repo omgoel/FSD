@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullscreen Video Calling Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td {
+            margin: 12px;
+            padding: 20px;
+            border: 1px solid #000;
+            font-size: 24px;
+        }
+
+        td:first-child {
+            width: 33.33%;
+        }
+
+        td {
+            height: 50%;
+        }
+
+        tr:first-child td {
+            height: auto;
+            background-color: #f0f0f0;
+        }
+
+        center {
+            display: block;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="3">
+                <center>Video Calling</center>
+            </td>
+        </tr>
+        <tr>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+        </tr>
+        <tr>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+            <td><video width="600" height="500" controls>
+                <source src="./movie.mp4" type="video/mp4">
+              </video></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
